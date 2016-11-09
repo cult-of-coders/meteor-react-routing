@@ -22,8 +22,8 @@ Package.onUse(function(api) {
   api.mainModule('index.js', 'client');
 });
 
-Package.onTest(function(api) {
-  api.use('ecmascript');
-  api.use('tinytest');
-  api.use('react-routing');
-});
+// No testing yet, feel free to contribute.
+// Package.onTest(function(api) {
+//   api.use('ecmascript');
+//   api.use('tinytest');
+// });
