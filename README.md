@@ -7,6 +7,8 @@ to easily create your routes. For the rest / custom functionality check more on:
 
 https://github.com/kadirahq/flow-router
 
+For Basic Meteor Introduction, check Chapter 1 from: http://www.meteor-tuts.com 
+
 ## Install
 ```bash
 meteor add cultofcoders:meteor-react-routing
@@ -50,18 +52,20 @@ route(path, Component, properties, flowRouterAdditionalOptions);
 ### Basic usage
 
 ```js
-// file: /imports/startup/client/index.js
-...
-import '/imports/routing';
-```
-
-```js
 // file: /imports/routing/index.js
 
 import route from './router.js';
 import Home from '/imports/ui/Home.jsx';
 
 route('/', Home);
+```
+
+Meteor needs to be aware of our routes:
+
+```js
+// file: /imports/startup/client/index.js
+
+import '/imports/routing';
 ```
 
 ### Parameters
