@@ -30,6 +30,7 @@ export default function (App) {
     handler.add = handler.bind(FlowRouter);
     handler.path = FlowRouter.path.bind(FlowRouter);
     handler.current = FlowRouter.current.bind(FlowRouter);
+    handler.go = FlowRouter.go.bind(FlowRouter);
 
     return handler;
 }

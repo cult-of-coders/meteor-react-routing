@@ -155,6 +155,19 @@ route('/posts/:_id', PostView, {}, {
 route.path('post_view', {_id: 'XXX'}) // returns /posts/XXX
 ```
 
+### Travel to a different route.
+
+An action happens, someone submitted a form, you want to take him to the list or some other place:
+
+```
+import route from '/imports/routing/router.js';
+
+route.go('/posts/:_id', {_id: 'XXX'}, {page: 2}) // pathDef, params, queryParams
+
+// or for a named route:
+route.go('post_view', {_id: 'XXX'}, {page: 2}) // pathDef, params, queryParams
+```
+
 ### Getting the current route
 ```js
 import route from '/imports/routing/router.js';
