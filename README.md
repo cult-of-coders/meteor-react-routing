@@ -40,7 +40,7 @@ export default ({main, routeProps}) => {
             {React.createElement(main, routeProps)}
         </div>
     )
-})
+}
 ```
 
 ### API
